@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
+/import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 
 import com.uat.pages.LoginPage;
 import com.uat.util.Xls_Reader;
-
+/
 /**
  * @author Admin
  *
@@ -43,7 +43,7 @@ public class VerifyLoginFucntionality {
 	public void verifyValidLogin(String Username, String Password, String sText) throws InterruptedException {
 		try {
 
-1			System.out.println("Username1==" + Username + "== " + "Password1===" + Password + "==" + sText);
+			//System.out.println("Username1==" + Username + "== " + "Password1===" + Password + "==" + sText);
 			// System.setProperty("webdriver.firefox.driver",
 			// System.getProperty("user.dir")+"\\src\\com\\uat\\config\\firefox.exe");
 			// driver = new InternetExplorerDriver();
@@ -69,7 +69,7 @@ public class VerifyLoginFucntionality {
 			 * driver.findElement(testManagement_Id).getText();
 			 */
 			String testText = "Test Management";
-			String testText1 = "Test Management1";
+			//String testText1 = "Test Management1";
 			// System.out.println("testText"+testText);
 			// for success
 			// Assert.assertEquals(testText, sText);
@@ -77,17 +77,17 @@ public class VerifyLoginFucntionality {
 			// Assert.assertEquals(testText1, sText);
 
 			// for one success and one failure
-			if (i == 0) {
-				Assert.assertEquals(testText1, sText);
+			//if (i == 0) {
+				Assert.assertEquals(testText, sText);
 
-			} else {
+			//} else {
 
-				Assert.assertEquals(testText1, sText);
-			}
+				//Assert.assertEquals(testText1, sText);
+			//}
 		} catch (Exception e) {
 		}
 		// driver.quit();
-		i++;
+		//i++;
 	}
 
 	/*
