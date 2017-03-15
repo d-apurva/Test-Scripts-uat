@@ -78,7 +78,7 @@ public class VerifyLoginFucntionality {
 
 			// for one success and one failure
 			if (i == 0) {
-				Assert.assertEquals(testText, sText);
+				Assert.assertEquals(testText1, sText);
 
 			} else {
 
