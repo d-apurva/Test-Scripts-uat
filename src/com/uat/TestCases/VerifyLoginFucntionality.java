@@ -34,7 +34,6 @@ public class VerifyLoginFucntionality {
 			System.out.println("in Ubuntu");
 			userXls = new Xls_Reader(System.getProperty("user.dir") + "/src/com/uat/xls/Crendiantial_User.xlsx");
 		}
-
 	}
 
 	public WebDriver driver = null;
@@ -44,7 +43,7 @@ public class VerifyLoginFucntionality {
 	public void verifyValidLogin(String Username, String Password, String sText) throws InterruptedException {
 		try {
 
-			System.out.println("Username1==" + Username + "== " + "Password1===" + Password + "==" + sText);
+1			System.out.println("Username1==" + Username + "== " + "Password1===" + Password + "==" + sText);
 			// System.setProperty("webdriver.firefox.driver",
 			// System.getProperty("user.dir")+"\\src\\com\\uat\\config\\firefox.exe");
 			// driver = new InternetExplorerDriver();
@@ -79,7 +78,7 @@ public class VerifyLoginFucntionality {
 
 			// for one success and one failure
 			if (i == 0) {
-				Assert.assertEquals(testText, sText);
+				Assert.assertEquals(testText1, sText);
 
 			} else {
 
