@@ -69,7 +69,7 @@ public class VerifyLoginFucntionality {
 			 * driver.findElement(testManagement_Id).getText();
 			 */
 			String testText = "Test Management";
-			//String testText1 = "Test Management1";
+			String testText1 = "Test Management1";
 			// System.out.println("testText"+testText);
 			// for success
 			// Assert.assertEquals(testText, sText);
@@ -77,17 +77,17 @@ public class VerifyLoginFucntionality {
 			// Assert.assertEquals(testText1, sText);
 
 			// for one success and one failure
-			//if (i == 0) {
+			if (i == 0) {
 				Assert.assertEquals(testText, sText);
 
-			//} else {
+			} else {
 
-				//Assert.assertEquals(testText1, sText);
-			//}
+				Assert.assertEquals(testText1, sText);
+			}
 		} catch (Exception e) {
 		}
 		// driver.quit();
-		//i++;
+		i++;
 	}
 
 	/*
